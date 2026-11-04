@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Traffic Router · codepandit</title>
+<meta name="description" content="Requests queue at the gateway. Send each one to a service before it times out. Overfill a service and its circuit breaker opens. Ten dropped requests and your error budget is gone.">
+<link rel="canonical" href="https://codepandit.com/games/traffic-router/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="codepandit">
+<meta property="og:title" content="Traffic Router · codepandit">
+<meta property="og:description" content="Requests queue at the gateway. Send each one to a service before it times out. Overfill a service and its circuit breaker opens. Ten dropped requests and your error budget is gone.">
+<meta property="og:url" content="https://codepandit.com/games/traffic-router/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect x='1' y='1' width='20' height='20' fill='%23F2F6FA' stroke='%231F5FA8' stroke-width='1.5'/%3E%3Cpath d='M6 8 L9 11 L6 14 M11 14 H16' fill='none' stroke='%231F5FA8' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="/">codepandit</a>
+    <nav class="nav-sm" aria-label="Site">
+      <a href="/#games" aria-current="page">Games</a>
+    </nav>
+    <div class="bar-icons">
+      <a class="bar-link" href="https://prabhanshu.me/">Portfolio</a>
+      <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch theme">Auto</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+<p class="crumb"><a href="/#games">← All games</a></p>
+
+<section class="game-page">
+  <p class="kicker">Canvas · keyboard or tap</p>
+  <h1>Traffic Router</h1>
+  <p class="lede">Requests queue at the gateway. Send each one to a service before it times out. Overfill a service and its circuit breaker opens. Ten dropped requests and your error budget is gone.</p>
+  <div class="game" id="game">
+      <div class="game-top">
+        <div></div>
+        <div class="hud"><span>Best <b id="tr-best">0</b></span></div>
+      </div>
+      <div class="game-stage">
+        <canvas id="tr-canvas" width="720" height="380" tabindex="0" aria-label="Traffic Router game. Press 1, 2 or 3 to route the next request."></canvas>
+        <div class="route-btns">
+          <button class="btn" type="button" data-route="0"><span class="kbd">1</span> Rails API</button>
+          <button class="btn" type="button" data-route="1"><span class="kbd">2</span> Search</button>
+          <button class="btn" type="button" data-route="2"><span class="kbd">3</span> Recs (slow)</button>
+        </div>
+      </div>
+      <div class="game-foot">Keys 1 · 2 · 3 route the next request. Space starts. Tap a service on a phone.</div>
+    </div>
+</section>
+
+<section class="sec more">
+  <h2>More games</h2>
+  <ul class="cards">
+    <li><a class="card" href="/games/squash-bugs/"><span class="kicker">40-second shift</span><h3>Squash Prod Bugs</h3><p>Click bugs before they become incidents. Leave the healthy deploys alone.</p><span class="go">Play →</span></a></li>
+    <li><a class="card" href="/games/incident-terminal/"><span class="kicker">Text adventure</span><h3>Incident Terminal</h3><p>It's launch night and you're on call. Work a real incident from first page to postmortem.</p><span class="go">Play →</span></a></li>
+  </ul>
+</section>
+
+<footer><span>© 2026 codepandit.com</span><span>Made by <a href="https://prabhanshu.me/">Prabhanshu Pandit</a></span></footer>
+</main>
+<script src="/assets/site.js"></script>
+<script src="/assets/traffic-router.js"></script>
+<script data-goatcounter="https://codepandit.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

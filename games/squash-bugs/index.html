@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Squash Prod Bugs · codepandit</title>
+<meta name="description" content="Bugs pop up on the dashboard. Click them before they turn into incidents. Leave the green deploys alone: clicking one rolls back healthy code.">
+<link rel="canonical" href="https://codepandit.com/games/squash-bugs/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="codepandit">
+<meta property="og:title" content="Squash Prod Bugs · codepandit">
+<meta property="og:description" content="Bugs pop up on the dashboard. Click them before they turn into incidents. Leave the green deploys alone: clicking one rolls back healthy code.">
+<meta property="og:url" content="https://codepandit.com/games/squash-bugs/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect x='1' y='1' width='20' height='20' fill='%23F2F6FA' stroke='%231F5FA8' stroke-width='1.5'/%3E%3Cpath d='M6 8 L9 11 L6 14 M11 14 H16' fill='none' stroke='%231F5FA8' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="/">codepandit</a>
+    <nav class="nav-sm" aria-label="Site">
+      <a href="/#games" aria-current="page">Games</a>
+    </nav>
+    <div class="bar-icons">
+      <a class="bar-link" href="https://prabhanshu.me/">Portfolio</a>
+      <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch theme">Auto</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+<p class="crumb"><a href="/#games">← All games</a></p>
+
+<section class="game-page">
+  <p class="kicker">40-second shift</p>
+  <h1>Squash Prod Bugs</h1>
+  <p class="lede">Bugs pop up on the dashboard. Click them before they turn into incidents. Leave the green deploys alone: clicking one rolls back healthy code.</p>
+  <div class="game" id="game">
+      <div class="game-top">
+        <div></div>
+        <div class="hud"><span>Score <b id="bg-score">0</b></span><span>Incidents <b id="bg-inc">0</b></span><span>Time <b id="bg-time">40</b>s</span><span>Best <b id="bg-best">0</b></span></div>
+      </div>
+      <div class="game-stage">
+        <div class="bugs-grid" id="bg-grid"></div>
+        <div class="route-btns"><button class="btn primary" type="button" id="bg-start">Start a 40-second shift</button></div>
+        <div class="bench-msg" id="bg-msg" aria-live="polite"></div>
+      </div>
+    </div>
+</section>
+
+<section class="sec more">
+  <h2>More games</h2>
+  <ul class="cards">
+    <li><a class="card" href="/games/traffic-router/"><span class="kicker">Canvas · keyboard or tap</span><h3>Traffic Router</h3><p>Route requests to services before they time out, without tripping a circuit breaker.</p><span class="go">Play →</span></a></li>
+    <li><a class="card" href="/games/incident-terminal/"><span class="kicker">Text adventure</span><h3>Incident Terminal</h3><p>It's launch night and you're on call. Work a real incident from first page to postmortem.</p><span class="go">Play →</span></a></li>
+  </ul>
+</section>
+
+<footer><span>© 2026 codepandit.com</span><span>Made by <a href="https://prabhanshu.me/">Prabhanshu Pandit</a></span></footer>
+</main>
+<script src="/assets/site.js"></script>
+<script src="/assets/squash-bugs.js"></script>
+<script data-goatcounter="https://codepandit.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
